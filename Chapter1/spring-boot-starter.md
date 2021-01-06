@@ -55,7 +55,11 @@
 	
 5.	配置自动注入  
 	
-	在resources目录下，新建 META_INF/spring.factories 文件，填入需要自动注入类的全路径 cn.kj120.study.StarterConfig
+	在resources目录下，新建 META_INF/spring.factories 文件，填入需要自动注入类的全路径 
+	
+	```
+	org.springframework.boot.autoconfigure.EnableAutoConfiguration=cn.kj120.study.StarterConfig
+	```
 	
 	
 	
@@ -102,3 +106,6 @@ IDE是通过读取配置信息的元数据而实现自动提示的，而元数�
 | [MyBatis-Plus](https://mp.baomidou.com/) | [MyBatis-Plus](https://github.com/baomidou/mybatis-plus)（简称 MP）是一个 [MyBatis](http://www.mybatis.org/mybatis-3/) 的增强工具，在 MyBatis 的基础上只做增强不做改变，为简化开发、提高效率而生 |
 | [Knife4j](https://doc.xiaominfo.com/)    | knife4j是为Java MVC框架集成Swagger生成Api文档的增强解决方案  |
 
+## 代码地址
+
+https://github.com/1024potato/study/tree/master/demo-spring-boot-starter
