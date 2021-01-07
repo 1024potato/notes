@@ -1,4 +1,4 @@
-spring-cache 自定义缓存过期时间
+### Spring-Cache 自定义缓存过期时间
 
 一、码前必备
 
@@ -162,5 +162,13 @@ public User find(Integer id) {
     log.info("查询到用户 {}", user);
     return user;
 }
+
+/**
+* 注解 @Cacheable  value属性包含key前缀和过期时间，默认使用"#"分割
+*
+* 缓存失效时间5分钟value值为 user#5m
+* 缓存失效时间8秒钟value值为 user#8s
+* 缓存失效时间11小时value值为 user#11h
+*/
 ````
 
